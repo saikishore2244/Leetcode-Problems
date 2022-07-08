@@ -1,5 +1,6 @@
 //********************** BEST SOLUTION **********************************/
 /**
+ * Prefix Sum
  * Time Complexity - O(N)
  * Space Complexity - O(1) -Space Occupied by sum,leftSum
  */

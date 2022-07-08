@@ -10,14 +10,14 @@
  */
 var pivotIndex = function(nums) {
     let sum = nums.reduce((a,b) => a+b,0);
-    let leftSum = 0
+    let leftSum = 0;
     for(let i = 0; i<nums.length; i++){
         if(leftSum === sum - leftSum - nums[i]){ //subtracting nums[i] as we need to exclude it from total sum if it is pivot index
-            return i
+            return i;
         }
         leftSum += nums[i];
     }
-    return -1
+    return -1;
 };
 /**
  * @param {number[]} nums
@@ -25,23 +25,23 @@ var pivotIndex = function(nums) {
 */
 var pivotIndex1 = function(nums) {
     for(let i = 0; i<nums.length; i++){
-        let leftSum = 0
-        let rightSum = 0
-        let j = i-1
-        let k = i+1
+        let leftSum = 0;
+        let rightSum = 0;
+        let j = i-1;
+        let k = i+1;
         while(j >= 0){
-            leftSum += nums[j]
-            j-- 
+            leftSum += nums[j];
+            j-- ;
         }
         while(k < nums.length){
-            rightSum += nums[k]
-            k++
+            rightSum += nums[k];
+            k++;
         }
         if(leftSum === rightSum){
-            return i
+            return i;
         }
     }
-    return -1
+    return -1;
 };
 
 console.log(pivotIndex([1,3,7,6,5,6]));

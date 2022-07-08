@@ -1,5 +1,5 @@
 //********************** BEST SOLUTION **********************************/
-//Can be solved using bitwise operator XOR
+//Bit Manipulation - Can be solved using bitwise operator XOR
 /**
  * @param {number[]} nums
  * @return {number}

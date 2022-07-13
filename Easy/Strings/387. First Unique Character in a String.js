@@ -1,7 +1,7 @@
 //********************** BEST SOLUTION **********************************/
 /*
 Time Complexity - O(n)
-Space Complexity - O(n) Map is created and stores all values
+Space Complexity - O(1)
 */
 //indexOf method has startIndex as second parameter 
 /**
@@ -16,7 +16,8 @@ Space Complexity - O(n) Map is created and stores all values
 };
 
 /*
-Not a best solution because. Accepted Solution coded by me. TC - O(n) SC- O(1) Max Space occupied is 26 as english alphabets are 26
+Not a best solution because the answer can be acheived with one loop.
+Accepted Solution coded by me. TC - O(n) SC- O(1) Max Space occupied is 26 as english alphabets are 26
 */
 /**
  * @param {string} s
